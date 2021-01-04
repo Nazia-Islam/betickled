@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betickled</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <form name="contact" class="main-box">
+            <div class="event-info">
+                <div class="heading">
+                    <span class="invited_by" style="text-transform: capitalize;font-size: 26px;">Rohit Arora</span>
+                    <h3 style="text-align: center;"></h3>
+                    <h3>
+                        <span style="color: #e82853;font-family: 'Pacifico';">invites you to</span>
+                    </h3>
+                    <h3>Party Honi Chahiye </h3>
+                    <h3>
+                        <span class="event_date">Thu, Sep 17, 2020</span>
+                        " | "
+                        <span class="event_time">10:21 AM</span>
+                        " | "
+                        <span class="event_duration">5 hours</span>
+                    </h3>
+                    <h3>
+                        <img src="https://partysignup.com/rsvp_src/img/map.png" style="width: 20px;vertical-align: middle;">
+                        <span class="address" style="vertical-align: middle;padding-right: 20px;font-size: 18px;">Online Event</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="count-down">
+                <table class="tbl-count-down">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="c_day">00</span>
+                            </td>
+                            <td><span class="count-down-separator">:</span></td>
+                            <td><span class="c_hour">00</span></td>
+                            <td><span class="count-down-separator">:</span></td>
+                            <td><span class="c_minute">00</span></td>
+                            <td><span class="count-down-separator">:</span></td>
+                            <td><span class="c_second">00</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="count-down-text"> DAYS</span></td>
+                            <td></td>
+                            <td><span class="count-down-text"> HOURS</span></td>
+                            <td></td>
+                            <td><span class="count-down-text"> MINUTES</span></td>
+                            <td></td>
+                            <td><span class="count-down-text"> SECONDS</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="map map-mini location_link_div" style="display: none;">
+                <a href="" target="_blank" title="Location" id="location_map">
+                    <div class="map-place">
+                        <p style="padding-top: 60px;padding-bottom: 60px;font-size: 16px;font-weight: 700;text-align: center ;"> <span class="small-text place_name_note" style="text-decoration: underline;">( click map for directions )</span> </p> 
+                    </div>
+                    <p class="place"> <img class="place-img" src="rsvp_src/img/map.png">  <span class="place_name" style="font-size: 13px;"></span></p>
+                    <!-- <p class="place">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26369770.413590293!2d-113.68745730799483!3d36.216018547509485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sin!4v1589175936160!5m2!1sen!2sin" width="100%" height="auto" frameborder="0" style="border:0; border-radius: 20px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <span class="place_name"></span>
+                    </p> -->
+
+                    <!-- <a href="" target="_blank" title="App" id="app_link"> -->
+                        <!-- <img src="rsvp_src/img/mapbg.png" width="100%"> -->
+                        <!-- <img src="rsvp_src/img/mapbg_2.png" width="100%" onclick="openAppLink()" style="cursor: pointer;"> -->
+                    <!-- </a> -->
+                </a>       
+            </div>
+            <div class="desc">
+                <p class="desc-header" style="padding-left: 15px;">Party Details: </p>
+                <p class="desc-box" style="padding-left: 15px;">Party</p>
+            </div>
+            <div class="linktag online_link_div" style="">
+                <p class="boxHeader">Online Party Link
+                </p><p class="place">
+                    <a href="//www.google.com" target="_blank" title="Constribution" id="online_link" style="text-align: center;">
+                        <span class="small-text online_link" style="color: blue; text-decoration-line: underline; word-break: break-all;font-weight: 600;">https://www.google.com/</span>
+                    </a>
+                </p>
+            </div>
+            <div class="linktag contribution_link_div" style="">
+                <p class="boxHeader">Payment Link
+                </p><p class="place">
+                    <span style="font-size: 14px;color: #000;">Guests are requested to contribute $<span class="contribution_amount"></span> towards the party using the link below.</span>  <br><br>
+                    <a href="https://www.paypal.me/rohitArora/" target="_blank" id="contribution_link">
+                        <span class="small-text contribution_link" style="color: blue; text-decoration-line: underline; word-break: break-all;">https://www.paypal.me/rohitArora/</span>   
+                    </a>
+                </p>
+            </div>
+            <div class="linktag gift_registory_link_div" style="">
+                <p class="boxHeader">Gift Registry Link
+                </p><p class="place">
+                    <span style="font-size: 14px;color: #000;">Guests are allowed to bring gifts or buy from the gift registry Link below.</span>  <br><br>
+                    <a href="//www.amazon.com" target="_blank" id="gift_registory_link">
+                        <span class="small-text gift_registory_link" style="color: blue; text-decoration-line: underline; word-break: break-all;">www.amazon.com</span>
+                    </a>
+                </p>
+            </div>
+            <div class="form-box">
+
+                <!-- <fieldset>
+                    <span>Select Your Country</span>
+                    <select type="select" id="country_code" name="country_code" tabindex="1" required=""  class="rounded-circle" autofocus>
+                    </select>
+                </fieldset> -->
+                <fieldset>
+                    <div style="display: inline">
+                        <input placeholder="Code" type="text" id="country_code" name="country_code" tabindex="1" required="" style="width: 20%; float:left;margin-right: 10px;" minlength="2" maxlength="4" onkeypress="return isPhoneCountryCode(event)" onpaste="return false;">
+                        <input placeholder="Your Phone Number" type="tel" id="phone_number" name="phone_number" tabindex="2" required="" style="width: calc(80% - 10px);; float:left;" minlength="8" maxlength="14" onkeypress="return isNumber(event)" onpaste="return false;">
+                    
+                </div></fieldset>
+                <fieldset>
+                  <input placeholder="Your First Name" type="text" id="first_name" name="first_name" tabindex="3" required="" minlength="2" maxlength="30" onkeypress="return isCharacterAndSpace(event)" onpaste="return false;">
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your Last Name" type="text" id="last_name" name="last_name" tabindex="4" required="" minlength="2" maxlength="30" onkeypress="return isCharacterAndSpace(event)" onpaste="return false;">
+                </fieldset>
+                <fieldset class="rsvp-box">
+                    <h4>RSVP</h4>
+                    <!-- <input type="radio" class="radio" id="join" name="rsvp" value="join" tabindex="5" required="">
+                    <label for="join">Join</label>
+                    <input type="radio" class="radio" id="can_not_join" name="rsvp" value="can_not_join" tabindex="6" required="">
+                    <label for="can_not_join">Can't Join</label><br> -->
+
+                    <div class="btn-group-justified flex-wrap btn-group-toggle button_choice" data-toggle="buttons">
+                      <label class="btn btn-outline-warning btnGreen" style="color:limegreen; border-color:limegreen;font-weight: 700;">
+                       Yes
+                      </label>
+                      <label class="btn btn-outline-warning btnYellow" style="color:gold; border-color:gold;font-weight: 700;">
+                        May Be
+                      </label>
+                      <label class="btn btn-outline-warning btnRed" style="color:red; border-color:red;font-weight: 700;">
+                        Can't Join
+                      </label>
+                    </div>
+                </fieldset>
+
+                <div class="join_further_value" style="display: none;">
+                    <h6>Add Additional Guests</h6>
+
+
+                    <div class="row">
+
+                        <ul class="guest-box">
+                            <li id="adult">
+                                <fieldset>
+                                    <p>Adult</p>
+                                    <input type="button" value="-" class="qtyminus" field="adult">
+                                    <input type="text" name="adult" value="0" class="qty">
+                                    <input type="button" value="+" class="qtyplus" field="adult">
+                                </fieldset>
+                            </li>
+                            <li id="children">
+                                <fieldset>
+                                <p>Children</p>
+                                    <input type="button" value="-" class="qtyminus" field="children">
+                                    <input type="text" name="children" value="0" class="qty">
+                                    <input type="button" value="+" class="qtyplus" field="children">
+                                </fieldset>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <fieldset>
+                  <button name="submit" type="submit" id="submit" class="submit-btn" data-submit="...Sending">SEND</button>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
